@@ -1,0 +1,28 @@
+int a;
+float b;
+int c;
+
+a = 5;
+b = 3.14;
+d = 2; // Esta linha deve gerar um erro semântico porque 'd' não foi declarado
+c = "texto"; // Esta linha deve gerar um erro de compatibilidade de tipos porque 'c' é do tipo int e está recebendo uma string
+
+if (a > b) {
+    c = 10;
+}
+
+while (a < 10) {
+    a = a + 1;
+}
+
+for (int i = 0; i < 5; i++) {
+    b = b + 1.1;
+}
+
+do {
+    c = c - 1;
+} while (c > 0);
+
+foreach (var item in collection) {
+    // Código...
+}
